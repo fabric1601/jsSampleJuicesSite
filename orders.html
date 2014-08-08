@@ -1,0 +1,197 @@
+<!-- Code Author: Ivan Gashtilov -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Yum Juices</title>
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-1" />
+<script language="javascript" type="text/javascript" src="yumscript.js"></script>
+<script language="javascript" type="text/javascript" src="yumvalidation.js"></script>
+<link rel="stylesheet" type="text/css" href="yumstyle.css" />
+</head>
+<body>
+	<!-- start main div container here --> 
+	<ul id="menu" name="menu">
+	<li><a href="yumindex.html" class="home">Home<span></span></a></li>
+	<li><a href="yumjuices.html" class="juice">Juices<span></span></a></li>
+	<li><a href="#" class="order">Orders<span></span></a></li>
+</ul><!-- start content div container here --> 
+        <div id="main">
+        <div id="background">
+</div>
+		<div id="form">
+		<form name="MyForm" action="yumorder.html" method="POST" >
+			<p>We have prepared a list of 10 creates for you to choose from. Simply select the amount you would like to order and click the <b>"Total"</b> button.</p>
+			<p>The amount details will then be displayed under the <b>"Results and Details"</b> section. If you are happy with the selection, please then proceed of filling up your personal details, billing address, delivery address and payment details and click the <b>"Order"</b> button at the end.</p>
+			<p>The prices below indicate the price for the whole crate, excluding VAT (17.5%).<br />
+			If you order more than 5 creates, you'll receive a 12% discount.<br /></p>
+		<h2> Products:</h2>
+		    <div id="productsrow">
+	            <div id="products">
+					<img src="images/apple_cart.png" /><br />
+					<label for="product1">Apple Juice</label>
+					<input type="text" id="product1" class="inputbox" value="0" size="1"/>
+				</div>
+				<div id="products">
+					<img src="images/chr_cart.png" /><br />
+					<label for="product2">Cherry Juice</label>
+					<input type="text" id="product2"  class="inputbox"value="0" size="1"/>
+				</div>
+				<div id="products">
+					<img src="images/orng_cart.png" /><br />
+					<label for="product3">Orange Juice</label>
+					<input type="text" id="product3"  class="inputbox"value="0" size="1"/>
+				</div>
+				<div id="products">
+					<img src="images/plm_cart.png" /><br />
+					<label for="product4">Plum Juice</label>
+					<input type="text" id="product4"  class="inputbox"value="0" size="1"/>
+				</div>
+				<div id="products">
+					<img src="images/strbry_cart.png" /><br />
+					<label for="product5">Strawberry Juice</label>
+					<input type="text" id="product5"  class="inputbox"value="0" size="1"/>
+				</div>
+			</div>
+			<div id="productsrow">
+				<div id="products2">
+					<img src="images/crt_lbl.png" /><br />
+					<label for="product6">Carrot Juice</label>
+					<input type="text" id="product6"  class="inputbox"value="0" size="1"/>
+				</div>
+				<div id="products2">
+					<img src="images/pear_lbl.png" /><br />
+					<label for="product7">Pear Juice</label>
+					<input type="text" id="product7"  class="inputbox"value="0" size="1"/>
+				</div>
+				<div id="products2">
+					<img src="images/pmgr_lbl.png" /><br />
+					<label for="product8">Pomgrenade Juice</label>
+					<input type="text" id="product8"  class="inputbox"value="0" size="1"/>
+				</div>
+			</div>
+			<div id="productsrow">
+				<div id="products3">
+					<img src="images/tmto_lbl.png" /><br />
+					<label for="product9">Tomato Juice</label>
+					<input type="text" id="product9"  class="inputbox"value="0" size="1"/>
+				</div>
+				<div id="products3">
+					<img src="images/kiwi_gls.png" /><br />
+					<label for="product10">Kiwi Juice</label>
+					<input type="text" id="product10"  class="inputbox"value="0" size="1"/>
+				</div>
+			</div>
+			<div id="buttons">
+				<p>
+	              <input type="button" onclick="getTotal();" value = "Total">
+	              <input type="button"  onClick="window.location.href=window.location.href" value = "Reset">
+				</p>
+			</div>
+           <h2>Results and Details:</h2>    
+	            <div class="totalresult">                
+                    <div id="output" class="outputtextblocks">
+						<span id="total"></span>
+                    </div>
+                    <div id="output" class="outputtextblocks">
+                        <span id="discount"></span>
+                    </div>
+                    <div id="output" class="outputtextblocks">
+                        <span id="vat"></span>
+                    </div>
+                    <div id="output" class="outputtextblocks">
+                        <span id="totalincludingvat"></span>
+                    </div>
+                </div>
+			<div id="details">
+				<h2>Personal Details:</h2>
+				<div id="labels">
+					<label for="firstname">Firstname</label><br />
+					<label for="surname">Surname</label><br />
+					<label for="phone">Phone Number</label><br />
+					<label for="email">E-mail</label><br />
+				</div>
+				<div id="fields">
+					<input type="text" id="fname"  class="inputbox"/><br />
+					<input type="text" id="sname"  class="inputbox"/><br />
+					<input type="text" id="phoneNumber"  class="inputbox"/><br />
+					<input type="text" id="email"  class="inputbox"/>
+				</div>
+			</div>
+		    <div id="billingDetails">
+				<h2>Billing Details:</h2>
+				<div id="labels">
+					<label for="address1">Address</label><br />
+					<label for="address2">Address2</label><br />
+					<label for="town">Town</label><br />
+					<label for="country">Country</label><br />
+					<label for="postcode">Postcode</label><br />
+				</div>
+				<div id="fields">
+					<input type="text" id="address1"  class="inputbox"/><br />
+					<input type="text" id="address2"  class="inputbox"/><br />
+					<input type="text" id="town"  class="inputbox"/><br />
+					<input type="text" id="country"  class="inputbox"/><br />
+					<input type="text" id="postcode"  class="inputbox"/><br />
+				</div>
+				</div>	
+				<div id="sameBillingAddress">
+					<p class="question">Is your billing address the same?<input name="sameBillingGroup" id="yes" onclick="isSameBillingAddress()" type="radio" />
+					<label>Yes</label>
+					<input name="sameBillingGroup" id="no" onclick="notSameBillingAddress()" type="radio" />
+					No</p>
+			</div><!--end of same BillingAddress"-->
+		    <div id="deleveryDetails">
+				<h2>Delivery Details:</h2>
+				<div id="labels">
+					<label for="address1D">Address</label><br />
+					<label for="address2D">Address2</label><br />
+					<label for="townD">Town</label><br />
+					<label for="countryD">Country</label><br />
+					<label for="postcodeD">Postcode</label><br />
+				</div>
+				<div id="fields">
+					<input type="text" id="address1D"  class="inputbox"/><br />
+					<input type="text" id="address2D"  class="inputbox"/><br />
+					<input type="text" id="townD"  class="inputbox"/><br />
+					<input type="text" id="countryD"  class="inputbox"/><br />
+					<input type="text" id="postcodeD"  class="inputbox"/><br />
+				</div>		
+			</div>
+			<div id="paymentdetails">
+				<h2>Payment Details:</h2>
+			<!-- Card Type -->
+				<div id="labels">
+					<label class="cardType">Card Type</label><br />
+					<label for="nameOnCard">Name on the Card</label><br />
+					<label for="cardNumber">Card Number</label><br />
+					<label for="expDate">Expiry Date</label><br />
+				</div>
+				<div id="fields">
+				<select id="cardType" name="Card Type">
+					<option value="Mastercard">Mastercard</option>
+					<option value="Visa">Visa</option>
+					<option value="AmericanExpress">American Express</option>
+				</select><br />
+				<input type="text" id="nameOnCard"  class="inputbox"/><br />
+				<input type="text" id="cardNumber"  class="inputbox"/><br />
+				<input type="text" id="expDate"  class="inputbox"/><br />
+				</div>
+			</div>
+				<input type="button" onclick="getOrder();" value = "Order">
+	            <input type="button"  onClick="window.location.href=window.location.href" value = "Reset">
+	</form>
+</div>
+	<!-- end content div container here -->
+	<!-- start footer div container here --> 
+<div id="footer">
+	<p><a class="common" href="#">about us</a> | <a class="common" href="#">contact us</a> | <a class="common" href="#">site map</a> | <a class="common" href="#">copyright</a> |
+      </p>
+    <div class="copyright">
+	  <p>&#169 Copyright: Yum Juices 2007</p>
+	  <p>&nbsp;</p>
+	</div>
+</div>
+	<!-- end footer div container here -->
+</div>
+</body>
+</html>

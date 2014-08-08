@@ -1,0 +1,386 @@
+/* Code Author: Ivan Gashtilov */
+/* CSS for page regions */
+
+body 	 {
+	font-family: Verdana, Arial, sans-serif;
+	margin:0;
+	padding:0;
+	text-align:center;
+	background:url(images/background3.jpg);
+	background-repeat:repeat;
+	height:100%;
+	 
+	}
+	
+form		{
+		padding:25px;
+		}
+		
+
+background {
+    width: 100%; 
+    height: 100%; 
+    position: fixed; 
+    left: 0px; 
+    top: 0px; 
+    z-index: -1;
+}
+
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+/* css for page regions */
+
+#main	 {
+	width:774px;
+	background-color:#ffffff;
+	text-align:left;
+	margin-right: auto;
+	margin-bottom: 10px;
+	margin-left: auto;
+	border: 1px inset #999;
+	 } 
+* html #main
+	 {
+	width:762px;
+	 }
+
+#header  {
+	   border-bottom:1px solid #999999;
+	 } 
+#commonlinksbar 
+	 {
+	text-align:center;
+	margin:1em 0.5em 0 0;
+	font-size:0.7em;
+	 }
+#infobar {
+	text-align:left;
+	margin:1em 0.5em 0 0.5em;
+	font-size:0.7em;
+	 }
+
+#content {padding:0.5em;} 
+
+#footer  
+	 {
+	   border-top:1px solid #999999;
+	   text-align:center;
+	   line-height:3em;
+         } 
+#textblock 
+	 {
+	width:260px;
+	border:2px dashed #999999;
+	margin-left:10px;
+	padding:0px 5px ;
+	float:right;
+	font-size:0.95em;
+	margin-bottom:5px;
+	background-color:#FEF4CC;
+         }
+* html #textblock 
+	 {
+	width:274px;
+	 }
+#topnav  
+	 {
+	   padding-bottom: 1.1em;
+	   border-left: 1px solid #999999;
+	   margin-left: 25%;
+	 }
+#leftnavcol {
+	float:left;
+	width:25%;
+	border-right:1px dashed #999999;
+	margin-right:0.5em;
+	height:455px;
+	 }
+#leftnavblock {
+	margin-top:1.5em;
+	      }
+#leftnavblock ul {
+	padding:0;
+	margin:0;
+	border-top:1px solid #999999;
+	list-style-type:none;	
+		 }
+#leftnavblock li {
+	border-bottom:solid 1px #999999;
+		 }
+#leftnavblock a {
+	padding:0.5;
+	display:block;
+		 }
+#details	{
+
+			}
+#labels		{
+		display:inline;
+		float:left;
+		line-height:25px;
+		padding-right:10px;
+			}
+#fields		{
+		display:inline;
+		
+			}
+
+.topnavitem 
+	 {
+	   float:left;
+	   border-right:1px solid #999999;
+	   border-top:1px solid #999999;
+	   text-align:center;
+         }
+
+
+
+
+/* CSS for headers */
+
+h1	 {
+        padding-left: 105px;
+        font: italic bold 3em Tahoma;
+        color: #990000;
+	 }
+
+h2       {
+        background-image: url(juiceicon.gif);
+        background-repeat: no-repeat;
+        font: italic bold 1.25em Tahoma;
+        border-bottom: 2px solid;
+        width: 45%;
+        padding-left: 1.5em;
+	 }
+
+h3	 {
+	text-align:center;
+	 }
+
+
+/* CSS for lists */
+
+
+ul	 {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: smaller;
+	 }
+
+
+/* CSS for body text */
+
+p        {
+	font-size: smaller;
+	 }
+p.narrow {width:65%;}
+
+
+/* CSS for links */
+
+a:link 	{
+	text-decoration:none;
+	color:#000000;
+	padding-left:0.5em;
+	padding-right:0.5em;
+	}
+a:visited {
+	text-decoration:none;
+	color:#000000;
+	padding-left:0.5em;
+	padding-right:0.5em;
+	  }
+a:hover	  {
+	text-decoration:none;
+	color:#000000;
+	background-color:#fef4cc;
+	display:block;
+	  }
+/* CSS for user-defined classes */
+
+.producttitle
+	  {
+	font-weight:bolder;
+	font-style:italic;
+	  }
+
+.copyright
+	 {
+	font-size: 0.75em;
+	 }
+a.common:link
+	 {
+	display:inline;
+	padding:0;
+	 }
+a.common:visited
+	 {
+	display:inline;
+	padding:0;
+	 }
+a.common:hover
+	 {
+	background-color:#ffffff;
+	text-decoration:underline;
+	 }
+a.current {
+	color:#990000;
+	background-color:#ffff99;
+	display:block;
+	padding:0 0.5em;
+	  }
+a.breadcrumpslink:link
+	 {
+	display:inline;
+	padding:0;
+	 }
+a.breadcrumpslink:visited
+	 {
+	display:inline;
+	padding:0;
+	 }
+a.breadcrumpslink:hover
+	 {
+	background-color:#ffffff;
+	text-decoration:underline;
+	 }
+	 
+a.home:link		{
+	left: 50px;
+	top: 250px;
+	width: 162px;
+	height: 81px;
+	background: url(images/home.gif);
+
+				}
+a.home:hover	{
+	background: url(images/home_hover.gif);
+	background-repeat: no-repeat;
+				}
+a.juice:link		{
+
+	background: url(images/juices.gif);
+	background-repeat:no-repeat;
+	width: 190px;
+	height: 100px;
+	left: 317px;
+	top: 215px;
+
+				}
+a.juice:hover	{
+	background: url(images/juices_hover.gif);
+	background-repeat: no-repeat;
+				}
+a.order:link		{
+
+	background: url(images/orders.gif);
+	background-repeat:no-repeat;
+	width: 190px;
+	height: 100px;
+	left: 555px;
+	top: 234px;
+
+				}
+a.order:hover	{
+	background: url(images/orders_hover.gif);
+	background-repeat: no-repeat;
+				}
+/* CSS for images */
+
+
+img.fruit {
+	float:left;
+	border:1px solid #999999;
+	margin-right:0.5em;
+	  }
+
+
+
+#menu {
+	list-style: none;
+	padding: 0;
+	width: 774px;
+	height: 336px;
+	background: url(images/menu.gif) no-repeat;
+	position: relative;
+	margin-top: 15px;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+#menu span {
+	display: none;
+	position: absolute;
+}
+#menu a {
+	display: block;
+	text-indent: -900%;
+	position: absolute;
+	outline: none;
+	
+	
+}
+
+#menu .orders {
+	width: 160px;
+	height: 84px;
+	background-image: url(images/orders.gif);
+	left: 584px;
+	top: 245px;
+	background-color:transparent;
+}
+
+
+
+#menu .juices {
+	width: 160px;
+	height: 84px;
+	background: url(images/juices.gif) no-repeat;
+	left: 317px;
+	top: 234px;
+}
+
+.alertHidden
+        {
+		visibility:hidden;
+		font-family:"Arial";
+		font-size:12px;
+		color:red;
+		width:300px;
+		padding:0px;
+		margin-left:20px;
+    }
+
+.alertVisible
+        {
+		visibility:visible;
+		font-family:"Arial";
+		font-size:15px;
+		color:red;
+		width:600px;
+		padding:0px;
+		margin-left:20px;
+    }               
+#products	{
+	float:left;
+	width:130px;
+	margin-right:10px;
+}
+#products2	{
+	float:left;
+	width:200px;
+	margin-right:10px;
+}
+#products3	{
+	float:left;
+	width:250px;
+	margin-right:10px;
+}
+#productsrow	{
+			display:inline-block;
+			}
+#buttons	{
+	display:inline-block;
+}

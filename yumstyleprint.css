@@ -1,0 +1,191 @@
+/* Code Author: Ivan Gashtilov */
+/* CSS for page regions */
+
+body 	 {
+	font-family: 'Times New Roman', Arial, sans-serif;
+	margin:0;
+	padding:0; 
+	background-color:#FEF4CC;
+	text-align:center;
+	 }
+
+
+/* css for page regions */
+
+#main	 {
+	border:1px solid;
+	width:760px;
+	margin: 10px 5px;
+	background-color:#ffffff;
+	text-align:left;
+	 } 
+
+* html #main
+	 {
+	width:762px;
+	 }
+
+#header  {
+	   border-bottom:1px solid #999999;
+	 } 
+
+#content {padding:0.5em;} 
+
+
+
+* html #textblock 
+	 {
+	width:274px;
+	 }
+
+
+
+#leftnavblock ul {
+	padding:0;
+	margin:0;
+	border-top:1px solid #999999;
+	list-style-type:none;	
+		 }
+#leftnavblock li {
+	border-bottom:solid 1px #999999;
+		 }
+#leftnavblock a {
+	padding:0.5;
+	display:block;
+		 }
+
+
+.topnavitem 
+	 {
+	   float:left;
+	   border-right:1px solid #999999;
+	   border-top:1px solid #999999;
+	   text-align:center;
+         }
+#topnav, #leftnavblock, #infobar, #commonlinksbar, #leftnavcol, #footer, #textblock
+	 {
+	display:none;
+	 }
+
+
+
+/* CSS for headers */
+
+h1	 {
+        padding-left: 105px;
+        font: italic bold 3em 'Times New Roman';
+        color: #990000;
+	 }
+
+h2       {
+        background-image: url(juiceicon.gif);
+        background-repeat: no-repeat;
+        font: italic bold 1.25em 'Times New Roman';
+        border-bottom: 2px solid;
+        width: 45%;
+        padding-left: 1.5em;
+	 }
+
+h3	 {
+	text-align:center;
+	font:'Times New Roman';
+	 }
+
+
+/* CSS for lists */
+
+
+ul	 {
+	font-family: Tahoma, Arial, sans-serif;
+	font-size: smaller;
+	 }
+
+
+/* CSS for body text */
+
+p        {
+	font-size: smaller;
+	font:'Times New Roman';
+	 }
+p.narrow {width:65%;}
+
+
+/* CSS for links */
+
+a:link 	{
+	text-decoration:none;
+	color:#000000;
+	padding-left:0.5em;
+	padding-right:0.5em;
+	}
+a:visited {
+	text-decoration:none;
+	color:#000000;
+	padding-left:0.5em;
+	padding-right:0.5em;
+	  }
+a:hover	  {
+	text-decoration:none;
+	color:#990000;
+	background-color:#fef4cc;
+	display:block;
+	  }
+/* CSS for user-defined classes */
+
+.producttitle
+	  {
+	font-weight:bolder;
+	font-style:italic;
+	  }
+
+.copyright
+	 {
+	font-size: 0.75em;
+	 }
+a.common:link
+	 {
+	display:inline;
+	padding:0;
+	 }
+a.common:visited
+	 {
+	display:inline;
+	padding:0;
+	 }
+a.common:hover
+	 {
+	background-color:#ffffff;
+	text-decoration:underline;
+	 }
+a.current {
+	color:#990000;
+	background-color:#ffff99;
+	display:block;
+	padding:0 0.5em;
+	  }
+a.breadcrumpslink:link
+	 {
+	display:inline;
+	padding:0;
+	 }
+a.breadcrumpslink:visited
+	 {
+	display:inline;
+	padding:0;
+	 }
+a.breadcrumpslink:hover
+	 {
+	background-color:#ffffff;
+	text-decoration:underline;
+	 }
+/* CSS for images */
+
+img  	   {
+	display:none;
+	   }
+img.fruit {
+	display:none;
+	   }
+
+
+
